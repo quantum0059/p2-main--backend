@@ -13,7 +13,7 @@ app.use(cors({
 //security config like  
 
 app.use(express.json({limit: "16kb"}))
-app.user(express.urlencoded({
+app.use(express.urlencoded({
     extended: true,
     limit: "16kb"
 }))
